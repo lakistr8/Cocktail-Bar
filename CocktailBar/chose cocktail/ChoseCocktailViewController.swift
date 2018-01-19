@@ -29,6 +29,7 @@ class ChoseCocktailViewController: BaseViewController {
     
     @IBAction func searchDring(_sender:Any) {
         self.searchBtn.removeTarget(nil, action: nil, for: .allEvents)
+        self.textFld.text = ""
         searchView.isHidden = false
         drinkName.text = drinkButtonTitle.text
         self.textFld.placeholder = "Enter drink name"
@@ -38,6 +39,7 @@ class ChoseCocktailViewController: BaseViewController {
     
     @IBAction func searchCocktail(_sender: Any) {
         self.searchBtn.removeTarget(nil, action: nil, for: .allEvents)
+        self.textFld.text = ""
         searchView.isHidden = false
         drinkName.text = cocktailButtonTitle.text
         self.textFld.placeholder = "Enter cocktail name"
